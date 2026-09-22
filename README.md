@@ -1,3 +1,5 @@
+_COPIED FROM: [00._Course_Material/01._Assignments/00._Mandatories/Mandatory_I.md](https://github.com/anderslatif/EK_DAT_Node.js_2026_Autumn/blob/main/00._Course_Material/01._Assignments/00._Mandatories/Mandatory_I.md)_
+
 # Mandatory I
 
 Create a website that contains documentation for what you have learned so far.
