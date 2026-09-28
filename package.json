@@ -1,20 +1,36 @@
 {
-  "name": "nodejs-fullstack-mandatory-1",
-  "version": "1.0.0",
-  "description": "_COPIED FROM: [00._Course_Material/01._Assignments/00._Mandatories/Mandatory_I.md](https://github.com/anderslatif/EK_DAT_Node.js_2026_Autumn/blob/main/00._Course_Material/01._Assignments/00._Mandatories/Mandatory_I.md)_",
-  "homepage": "https://github.com/dasa0006/nodeJS-fullstack-mandatory-1#readme",
-  "bugs": {
-    "url": "https://github.com/dasa0006/nodeJS-fullstack-mandatory-1/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dasa0006/nodeJS-fullstack-mandatory-1.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+	"name": "nodejs-fullstack-mandatory-1",
+	"version": "1.0.0",
+	"description": "_COPIED FROM: [00._Course_Material/01._Assignments/00._Mandatories/Mandatory_I.md](https://github.com/anderslatif/EK_DAT_Node.js_2026_Autumn/blob/main/00._Course_Material/01._Assignments/00._Mandatories/Mandatory_I.md)_",
+	"homepage": "https://github.com/dasa0006/nodeJS-fullstack-mandatory-1#readme",
+	"bugs": {
+		"url": "https://github.com/dasa0006/nodeJS-fullstack-mandatory-1/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dasa0006/nodeJS-fullstack-mandatory-1.git"
+	},
+	"license": "ISC",
+	"author": "",
+	"type": "commonjs",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm run tailwind:build",
+		"postinstall": "npm run tailwind:build",
+		"prestart": "npm run tailwind:build",
+		"start": "node app.js",
+		"dev": "node --watch app.js",
+		"tailwind:watch": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+		"tailwind:build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify"
+	},
+	"dependencies": {
+		"express": "5.2.1"
+	},
+	"devDependencies": {
+		"@tailwindcss/cli": "^4.3.3",
+		"tailwindcss": "^4.3.3"
+	},
+	"allowScripts": {
+		"@parcel/watcher@2.5.1": true
+	}
 }
